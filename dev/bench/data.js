@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622726111787,
+  "lastUpdate": 1622726123577,
   "repoUrl": "https://github.com/getong/tokio",
   "entries": {
     "sync_rwlock": [
@@ -159,6 +159,92 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 810,
             "range": "± 3",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ],
+    "sync_mpsc": [
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d8b37d51a7d0cdf5a0fbf754240c929fb69e9f2",
+          "message": "macros: suppress clippy::default_numeric_fallback lint in generated code (#3831)",
+          "timestamp": "2021-06-02T18:16:23+09:00",
+          "tree_id": "9d4afa2a70f19ef453794a3df3368a259a27e377",
+          "url": "https://github.com/getong/tokio/commit/9d8b37d51a7d0cdf5a0fbf754240c929fb69e9f2"
+        },
+        "date": 1622726122623,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 5947612,
+            "range": "± 2350598",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 5642690,
+            "range": "± 1411961",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6025394,
+            "range": "± 2751077",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 253,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 253,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 254,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 23776,
+            "range": "± 154",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 773,
+            "range": "± 36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 933674,
+            "range": "± 1160",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 679136,
+            "range": "± 1184",
             "unit": "ns/iter"
           }
         ]
