@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625229435078,
+  "lastUpdate": 1625229451974,
   "repoUrl": "https://github.com/getong/tokio",
   "entries": {
     "sync_rwlock": [
@@ -259,6 +259,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 22375548,
             "range": "± 5088162",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "08ed41f339e345286f26bdbc6c67bf9f2975ed07",
+          "message": "chore: fix typos (#3907)",
+          "timestamp": "2021-07-01T02:06:56+09:00",
+          "tree_id": "a0e5c3a7c969cccb9f4c40b485eb3856b4c52fe9",
+          "url": "https://github.com/getong/tokio/commit/08ed41f339e345286f26bdbc6c67bf9f2975ed07"
+        },
+        "date": 1625229451053,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 167231,
+            "range": "± 4523",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 628936,
+            "range": "± 52274",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4936638,
+            "range": "± 1012972",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18051415,
+            "range": "± 3672853",
             "unit": "ns/iter"
           }
         ]
