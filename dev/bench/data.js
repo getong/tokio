@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625229462796,
+  "lastUpdate": 1625229466781,
   "repoUrl": "https://github.com/getong/tokio",
   "entries": {
     "sync_rwlock": [
@@ -417,6 +417,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 976,
             "range": "± 179",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "08ed41f339e345286f26bdbc6c67bf9f2975ed07",
+          "message": "chore: fix typos (#3907)",
+          "timestamp": "2021-07-01T02:06:56+09:00",
+          "tree_id": "a0e5c3a7c969cccb9f4c40b485eb3856b4c52fe9",
+          "url": "https://github.com/getong/tokio/commit/08ed41f339e345286f26bdbc6c67bf9f2975ed07"
+        },
+        "date": 1625229462495,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15996,
+            "range": "± 7267",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 874,
+            "range": "± 141",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 589,
+            "range": "± 200",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 16765,
+            "range": "± 7598",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 921,
+            "range": "± 121",
             "unit": "ns/iter"
           }
         ]
