@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625229466781,
+  "lastUpdate": 1625302030542,
   "repoUrl": "https://github.com/getong/tokio",
   "entries": {
     "sync_rwlock": [
@@ -471,6 +471,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 921,
             "range": "± 121",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8170e2787c21dd3bf9dbfda3ab8c770c16d51180",
+          "message": "sync: fix watch wrapper (#3914)",
+          "timestamp": "2021-07-02T23:24:02+02:00",
+          "tree_id": "4a830c6b254c483a2c61cff7c73ee01fd63c11a3",
+          "url": "https://github.com/getong/tokio/commit/8170e2787c21dd3bf9dbfda3ab8c770c16d51180"
+        },
+        "date": 1625302029689,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 13609,
+            "range": "± 3139",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 745,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 541,
+            "range": "± 72",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 13817,
+            "range": "± 3405",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 733,
+            "range": "± 3",
             "unit": "ns/iter"
           }
         ]
