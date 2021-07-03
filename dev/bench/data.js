@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625302034451,
+  "lastUpdate": 1625302037372,
   "repoUrl": "https://github.com/getong/tokio",
   "entries": {
     "sync_rwlock": [
@@ -361,6 +361,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18051415,
             "range": "± 3672853",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8170e2787c21dd3bf9dbfda3ab8c770c16d51180",
+          "message": "sync: fix watch wrapper (#3914)",
+          "timestamp": "2021-07-02T23:24:02+02:00",
+          "tree_id": "4a830c6b254c483a2c61cff7c73ee01fd63c11a3",
+          "url": "https://github.com/getong/tokio/commit/8170e2787c21dd3bf9dbfda3ab8c770c16d51180"
+        },
+        "date": 1625302034008,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 202682,
+            "range": "± 16937",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 718663,
+            "range": "± 64317",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5344372,
+            "range": "± 1082262",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 23125019,
+            "range": "± 4398221",
             "unit": "ns/iter"
           }
         ]
