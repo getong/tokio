@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625673054658,
+  "lastUpdate": 1625673057937,
   "repoUrl": "https://github.com/getong/tokio",
   "entries": {
     "sync_rwlock": [
@@ -463,6 +463,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 23125019,
             "range": "± 4398221",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5d61c997e9281e00f35c7ea426786996945f47f5",
+          "message": "chore: prepare tokio-stream 0.1.7 (#3923)",
+          "timestamp": "2021-07-07T10:58:51+02:00",
+          "tree_id": "5bcb997e339171aa3605b0bcd8fb49064838a336",
+          "url": "https://github.com/getong/tokio/commit/5d61c997e9281e00f35c7ea426786996945f47f5"
+        },
+        "date": 1625673056112,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 228985,
+            "range": "± 69108",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 1049904,
+            "range": "± 127794",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 6223503,
+            "range": "± 1438032",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 23059536,
+            "range": "± 4077573",
             "unit": "ns/iter"
           }
         ]
